@@ -1,0 +1,144 @@
+
+body, ul, h1, p, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    min-width: 1300px;
+    height: 260px;
+    background-color: #c50409;
+    color: white;
+    position: relative;
+
+    margin-bottom: 20px;
+    box-shadow: 0 5px 5px #c2c2c2;
+}
+
+header .header-icon {
+    padding: 80px 0 0 60px;
+}
+
+header .header-icon a {
+    font-size: 50px;
+}
+
+header .header-icon a:hover {
+    color: #d0d0d0;
+}
+
+header .header-icon p {
+    position: absolute;
+    bottom: 20px;
+}
+
+header .header-nav {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+header .header-nav li {
+    font-size: 20px;
+    padding:5px 10px;
+    float: left;
+    animation: shake 5s infinite;
+}
+
+header .header-nav li:hover {
+    color: #c50409;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.nav-selected {
+    color: #ffbc2e;
+}
+
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main .content {
+    height: 1000px;
+}
+
+#main .content li {
+    padding: 20px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#main .content li:hover {
+    border-left: 10px solid #b40409;
+    padding-left: 12px;
+}
+
+#main .main-text {
+    float: left;
+}
+
+#main .main-text p {
+    width: 80%;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+#main time {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.advert {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    width: 10%;
+}
+
+.advert li {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    background-color: #1c81ff;
+}
+
+.advert li:hover {
+    transform: scale(1.2);
+    background-color: #1960c8;
+}
+
+
+
+@keyframes shake {
+    50% {
+        transform: scale(1.2);
+    }
+    95% {
+        transform: scale(1.0);
+    }
+}

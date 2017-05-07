@@ -27,25 +27,28 @@ window.onload = function () {
             contentView.innerHTML = contentString;
 
         });
-
+        
     }
-    
-    
+
+    function navAction() {
+        var navButtons = document.querySelectorAll(".header-nav li");
+
+        var lastSelect = navButtons[0];
+        for (var i=0;i<navButtons.length;i++){
+            navButtons[i].onclick = function () {
+                lastSelect.className = "";
+                this.className = "nav-selected";
+                lastSelect = this;
+                reloadData(this.textContent);
+            }
+        }
+    }
+
     function init() {
         var type = "JavaScript";
         reloadData(type);
 
-        var navButtons = document.querySelectorAll(".header-nav li");
-
-        for (var i=0;i<navButtons.length;i++){
-            (function (i) {
-
-                navButtons[i].onclick = function () {
-                    reloadData(this.textContent);
-                }
-
-            })(i);
-        }
+        navAction();
     }
     
     init();
